@@ -11,41 +11,34 @@ class HeroHeaderView: UIView {
     
     private let downloadButon : UIButton = {
         let button = UIButton()
-          button.setTitle("Download", for: .normal)
-          button.layer.borderColor = UIColor.white.cgColor
-          button.layer.borderWidth = 1
-          button.translatesAutoresizingMaskIntoConstraints = false
-          button.layer.cornerRadius = 5
-          return button
-        
-        
-        
-        
+        button.setTitle("Download", for: .normal)
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderWidth = 1
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 5
+        return button
     }()
     
     private let playButton : UIButton = {
-      let button = UIButton()
+        let button = UIButton()
         button.setTitle("Play", for: .normal)
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 1
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
-        
-        
     }()
     
     private let heroImageView : UIImageView = {
-    let ImageView = UIImageView()
+        let ImageView = UIImageView()
         ImageView.contentMode = .scaleAspectFill
         ImageView.clipsToBounds = true
         ImageView.image = UIImage(named:"Poster5")
         return ImageView
-    
     }()
     
     private func addGradient(){
-    let GradientLayer = CAGradientLayer()
+        let GradientLayer = CAGradientLayer()
         GradientLayer.colors = [
             UIColor.clear.cgColor,
             UIColor.black.cgColor
@@ -63,7 +56,6 @@ class HeroHeaderView: UIView {
         addSubview(playButton)
         addSubview(downloadButon)
         applyConstrains()
-        
     }
     
     private func applyConstrains(){
@@ -80,9 +72,14 @@ class HeroHeaderView: UIView {
             downloadButon.widthAnchor.constraint(equalToConstant: 120)
         ]
 
-        
         NSLayoutConstraint.activate(playButtonConstrains)
         NSLayoutConstraint.activate(downloadButtonConstrains)
+    }
+    public func  configure(with model: TitleViewModel){
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
+            return
+        }
+        heroImageView.sd_setImage(with: url,completed: nil)
     }
     
     override func layoutSubviews() {
@@ -93,7 +90,7 @@ class HeroHeaderView: UIView {
     required init?(coder : NSCoder) {
         fatalError()
     }
-
-
-
+    
+    
+    
 }
