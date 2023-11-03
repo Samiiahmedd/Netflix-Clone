@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NetflixLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pPh-ap-qsE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NetflixLogo " translatesAutoresizingMaskIntoConstraints="NO" id="pPh-ap-qsE">
                                 <rect key="frame" x="59" y="311.66666666666669" width="275" height="254.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="254" id="D5P-fH-LuW"/>
@@ -39,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NetflixLogo" width="512" height="512"/>
+        <image name="NetflixLogo " width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
