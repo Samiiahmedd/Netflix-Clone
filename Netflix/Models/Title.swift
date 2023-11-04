@@ -7,7 +7,6 @@ import Foundation
 struct TrendingTitleResponse: Codable {
     let results : [Title]
 }
-
 struct Title : Codable {
     let id: Int
     let poster_path : String?

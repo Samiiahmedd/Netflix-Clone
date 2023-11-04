@@ -71,10 +71,11 @@ class HeroHeaderView: UIView {
             downloadButon.bottomAnchor.constraint(equalTo:bottomAnchor, constant: -50),
             downloadButon.widthAnchor.constraint(equalToConstant: 120)
         ]
-
+        
         NSLayoutConstraint.activate(playButtonConstrains)
         NSLayoutConstraint.activate(downloadButtonConstrains)
     }
+    
     public func  configure(with model: TitleViewModel){
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
             return
@@ -90,7 +91,4 @@ class HeroHeaderView: UIView {
     required init?(coder : NSCoder) {
         fatalError()
     }
-    
-    
-    
 }

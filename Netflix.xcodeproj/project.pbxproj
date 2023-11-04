@@ -77,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2640615D2AF64C3500A94E95 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				264FB5232AE9171300E6CB53 /* AppDelegate.swift */,
+				264FB5252AE9171300E6CB53 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		264FB5172AE9171300E6CB53 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +111,7 @@
 				264FB5412AE92B6E00E6CB53 /* ViewModels */,
 				264FB5402AE92B6800E6CB53 /* Views */,
 				264FB5372AE919B300E6CB53 /* Controllers */,
-				264FB5252AE9171300E6CB53 /* SceneDelegate.swift */,
+				2640615D2AF64C3500A94E95 /* Common */,
 				264FB52C2AE9171600E6CB53 /* Assets.xcassets */,
 				264FB52E2AE9171600E6CB53 /* LaunchScreen.storyboard */,
 				26B2DA7C2AF4F44900076FD3 /* NetflixModel.xcdatamodeld */,
@@ -116,7 +125,6 @@
 			children = (
 				26578C402AF272BF00EE9F0D /* Core */,
 				26578C412AF272E500EE9F0D /* General */,
-				264FB5232AE9171300E6CB53 /* AppDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

@@ -8,17 +8,12 @@
 import UIKit
 import SDWebImage
 class TitleCollectionViewCell: UICollectionViewCell {
-    
     static let identifier = "TitleCollectionViewCell"
-    
     let posterImageView : UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         return imageView
-         
     }()
-    
-    #warning("----")
     
     override init(frame: CGRect) {
         super.init(frame: frame)
